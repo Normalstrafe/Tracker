@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tracker</string>
+    <string name="city">Lviv</string>
+    <string name="api_key">fbc5e655bd9f1f64d9327afc227fee74</string>
+</resources>
