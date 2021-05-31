@@ -1,6 +1,8 @@
 package com.example.tracker;
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +23,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
+private Button gotopageselector;
+
 
 
 
@@ -34,17 +38,29 @@ public class MainActivity extends AppCompatActivity {
         String city= "Lviv";
         String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key + "&units=metric&lang=ru";
         new GetURLData().execute(url);
+        gotopageselector = (Button)findViewById(R.id.button1);
+        gotopageselector.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
     }
+    public void openActivity2(){
+        Intent intent = new Intent(this, Calculate.class);
+        startActivity(intent);
+    }
+
     @SuppressLint("StaticFieldLeak")
     private class GetURLData extends AsyncTask<String, String, String> {
 
-        // Будет выполнено до отправки данных по URL
+
         protected void onPreExecute() {
             super.onPreExecute();
-          // result_info.setText("Ожидайте...");
+
         }
 
-        // Будет выполняться во время подключения по URL
+
         @Override
         protected String doInBackground(String... strings) {
             HttpURLConnection connection = null;

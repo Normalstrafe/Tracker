@@ -11,17 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tracker">
-        <activity android:name=".Fitness"></activity>
+<!--        <activity android:name=".Activity2"></activity>-->
+        <activity android:name=".Fitness" />
         <activity android:name=".Cardio" />
         <activity android:name=".Power" />
         <activity android:name=".Mill" />
-        <activity android:name=".RunTraining" />
-        <activity android:name=".Calculate" />
+        <activity android:name=".RunTraining" /> <!-- <activity android:name=".Calculate" /> -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Calculate">
+            <intent-filter>
+                <action android:name="android.intent.action. " />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

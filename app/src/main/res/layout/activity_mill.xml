@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Mill"
-    android:background="@drawable/background">
+    android:background="@drawable/nightsky">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="150sp"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
         android:layout_marginTop="50sp"
+        android:src="@drawable/mill"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -20,7 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/imageView"
+        android:layout_marginHorizontal="50sp"
         android:layout_marginTop="70sp"
-        android:text="TextView" />
+        android:justificationMode="inter_word"
+        android:text="Существует несколько способов того, как совершить хороший удар кулаком, но для этого нужно использовать подходящую технику, используя свои бедра для совершения крутящего момента. Если вам хочется научиться защищать себя или вы стремитесь стать боксером, то очень важно знать, как правильно наносить удар кулаком. Помните, что целью самого удара не должно быть нанесение серьезной травмы, а скорее, временное обезвреживание нападающего. Читайте далее для получения нескольких полезных советов о нанесении удара."
+        android:textColor="@color/white" />
 
 </RelativeLayout>

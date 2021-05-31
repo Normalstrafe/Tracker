@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/nightsky"
     android:layout_height="match_parent"
     tools:context=".Calculate">
 
+
     <Button
         android:id="@+id/button1"
-        android:layout_width="match_parent"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView2"
         android:layout_marginHorizontal="150sp"
-        android:layout_marginTop="120sp"
+        android:layout_marginTop="150sp"
+        android:height="150px"
         android:text="Run" />
 
     <Button
@@ -21,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button1"
         android:layout_marginHorizontal="150sp"
+        android:height="150px"
         android:text="Mill" />
 
     <Button
@@ -29,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button2"
         android:layout_marginHorizontal="150sp"
+        android:height="150px"
         android:text="Power" />
 
     <Button
@@ -37,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button3"
         android:layout_marginHorizontal="150sp"
+        android:height="150px"
         android:text="Cardio" />
 
     <Button
@@ -45,15 +51,16 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button4"
         android:layout_marginHorizontal="150sp"
+        android:height="150px"
         android:text="fitness" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="150sp"
         android:layout_marginTop="50sp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:src="@drawable/watch"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/textView3"
@@ -62,5 +69,5 @@
         android:layout_marginTop="50sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="" />
 </RelativeLayout>

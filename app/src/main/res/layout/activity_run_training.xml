@@ -5,21 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RunTraining"
-    android:background="@drawable/background">
+    android:background="@drawable/nightsky">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="150sp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+
         android:layout_marginTop="50sp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/run" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="350sp"
         android:layout_height="match_parent"
+        android:scaleType="fitXY"
         android:layout_below="@id/imageView"
+        android:layout_marginHorizontal="50sp"
         android:layout_marginTop="70sp"
-        android:text="TextView" />
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="Під час бігу голову тримайте прямо, плечі розслабте, руки зігніть у ліктях під кутом 90 градусів. Крок за кроком, перекатом з п'ятки на носок, приземляючись на передню частину стопи, починайте збільшувати темп. У процесі бігу руки мають рухатися синхронно з ногами, утримуйте їх між грудьми і талією."
+        android:textColor="@color/white"
+        />
 </RelativeLayout>
